@@ -14,28 +14,107 @@ body{
   height: 100%;
 }
 
-/*==========================================================================
-   General
-==========================================================================*/
+/*============================================================================*/
+/*=============================== RESPONSIVE =================================*/
+/*============================================================================*/
+
+html {
+  font-size: 0.5em;
+}
+
+#banner1 {
+  content: url('../img/banner1-sm.jpg');
+}
+#banner2 {
+  content: url('../img/banner2-sm.jpg');
+}
+#banner3 {
+  content: url('../img/banner3-sm.jpg');
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 0.7em;
+  }
+
+  #banner1 {
+    content: url('../img/banner1-md.jpg');
+  }
+  #banner2 {
+    content: url('../img/banner2-md.jpg');
+  }
+  #banner3 {
+    content: url('../img/banner3-md.jpg');
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 0.9em;
+  }
+
+  #banner1 {
+    content: url('../img/banner1-l.jpg');
+  }
+  #banner2 {
+    content: url('../img/banner2-l.jpg');
+  }
+  #banner3 {
+    content: url('../img/banner3-l.jpg');
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1em;
+  }
+
+  #banner1 {
+    content: url('../img/banner1.jpg');
+  }
+  #banner2 {
+    content: url('../img/banner2.jpg');
+  }
+  #banner3 {
+    content: url('../img/banner3.jpg');
+  }
+}
+
+/*============================================================================*/
+/*================================ GENERAL ===================================*/
+/*============================================================================*/
+
+section {
+  padding-top: 2em;
+}
 
 .section-title {
-  padding-top: 1.5em;
+  padding: 0 0 3rem 0;
   text-align: center;
 }
 
 .section-title::after {
   position: absolute;
-  content: " ";
+  content: "";
   width: 50px;
-  top: 15px;
   margin-left: 0;
   margin-right: 0;
-  border-top: 2px solid #3498db;
+  border-top: 3px solid #ea2124;
 }
 
-/*==========================================================================
-   Navbar
-==========================================================================*/
+span {
+  display: block;
+}
+
+/*============================================================================*/
+/*=============================== NAVBAR =====================================*/
+/*============================================================================*/
 
 .bg-faded {
   background-color: transparent;
@@ -43,7 +122,7 @@ body{
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   padding: 0 15px 0 15px;
 }
 
@@ -52,58 +131,100 @@ body{
 }
 
 .nav-link:focus  {
-  color: #ea2124 !important;
+  color: white !important;
 }
 
-/*==========================================================================
-   Slider
-==========================================================================*/
+/*============================================================================*/
+/*=============================== SLIDER =====================================*/
+/*============================================================================*/
 
 .carousel,
-.item,
+.carousel-item,
+.carousel-inner,
 .active {
-    height: 100%;
+  height:100%;
 }
 
-.carousel-inner {
-    height: 100%;
-}
-
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+.carousel-caption {
+  top: 55%;
 }
 
 .carousel-caption > h1{
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
+  font-size: 6rem;
   color: #ea2124;
+  text-shadow: 1px 1px 10px #000;
 }
 
-.slide-1{
-  background-image: url('../img/banner1.png');
+.carousel-caption > p{
+  padding-top: 2em;
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px #000;
 }
 
-.slide-2{
-  background-image: url('../img/banner2.png');
-}
+/*============================================================================*/
+/*============================== ATTRACTIVES =================================*/
+/*============================================================================*/
 
-/*==========================================================================
-   Attractives
-==========================================================================*/
+.attractive-item {
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  padding: 0 1.5em 0 1.5em;
+}
 
 .attractive-item > h5 {
+  padding-top: 1.5em;
   font-size: 1.5em;
   text-align: center;
 }
 
 .attractive-item > p {
+  padding-top: 1.5em;
   font-size: 0.9em;
   text-align: justify;
-  padding-top: 1.5em;
+}
+
+.attractive-image-container {
+  height: 150px;
+  vertical-align: middle;
+}
+
+#trainingVideo {
+  padding-top: 1em;
+}
+
+/*============================================================================*/
+/*================================ INSTAGRAM =================================*/
+/*============================================================================*/
+
+#instaFeed {
+  padding-bottom: 2em;
+}
+
+#instaLink {
+  text-decoration: none;
+  color: #ea2124;
+}
+
+#instaTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/*============================================================================*/
+/*================================== FOOTER ==================================*/
+/*============================================================================*/
+
+footer {
+  background-color: #424142;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#mapLink {
+  text-decoration: none;
+  color: white;
 }
