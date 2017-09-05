@@ -1,48 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
-
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,
-body{
+html, body {
   font-family: 'Fjalla One', sans-serif;
   color: #424142;
   height: 100%;
 }
+
 
 /*============================================================================*/
 /*=============================== RESPONSIVE =================================*/
 /*============================================================================*/
 
 html {
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 #banner1 {
   content: url('../img/banner1-sm.jpg');
 }
+
 #banner2 {
   content: url('../img/banner2-sm.jpg');
 }
+
 #banner3 {
   content: url('../img/banner3-sm.jpg');
 }
 
+.carousel-caption > h1 {
+  font-size: 3.8rem;
+}
+
+.carousel-caption > p {
+  font-size: 1.5rem;
+}
+
+.attractive-item > h5 {
+  font-size: 2rem;
+}
+
+.attractive-item > p {
+  font-size: 1.5rem;
+  padding-bottom: 1.5em;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+@media (max-width: 568px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-width: 2px 0 0 0;
+    border-color: white;
+    border-style: solid;
+  }
+}
+
 @media (min-width: 576px) {
   html {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
-
   #banner1 {
     content: url('../img/banner1-md.jpg');
   }
@@ -52,13 +90,28 @@ html {
   #banner3 {
     content: url('../img/banner3-md.jpg');
   }
+  .carousel-caption > h1 {
+    font-size: 6rem;
+  }
+  .carousel-caption > p {
+    font-size: 1.8rem;
+  }
+  .attractive-item > h5 {
+    font-size: 1.1rem;
+  }
+  .attractive-item > p {
+    font-size: 0.9rem;
+    padding-bottom: 0;
+  }
+  .footer-item {
+    text-align: left;
+  }
 }
 
 @media (min-width: 992px) {
   html {
     font-size: 0.9em;
   }
-
   #banner1 {
     content: url('../img/banner1-l.jpg');
   }
@@ -68,13 +121,18 @@ html {
   #banner3 {
     content: url('../img/banner3-l.jpg');
   }
+  .attractive-item > h5 {
+    font-size: 1.3rem;
+  }
+  .attractive-item > p {
+    font-size: 1.0rem;
+  }
 }
 
 @media (min-width: 1200px) {
   html {
     font-size: 1em;
   }
-
   #banner1 {
     content: url('../img/banner1.jpg');
   }
@@ -84,7 +142,14 @@ html {
   #banner3 {
     content: url('../img/banner3.jpg');
   }
+  .attractive-item > h5 {
+    font-size: 1.5rem;
+  }
+  .attractive-item > p {
+    font-size: 1.1rem;
+  }
 }
+
 
 /*============================================================================*/
 /*================================ GENERAL ===================================*/
@@ -106,11 +171,14 @@ section {
   margin-left: 0;
   margin-right: 0;
   border-top: 3px solid #ea2124;
+  left: 50%;
+  margin-left: -25px;
 }
 
 span {
   display: block;
 }
+
 
 /*============================================================================*/
 /*=============================== NAVBAR =====================================*/
@@ -120,48 +188,52 @@ span {
   background-color: transparent;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-inverse .navbar-nav .nav-link {
   color: white;
   font-size: 1.5rem;
   padding: 0 15px 0 15px;
 }
 
-.nav-link:hover  {
+.nav-link:hover {
   color: #ea2124 !important;
 }
 
-.nav-link:focus  {
+.nav-link:focus {
   color: white !important;
 }
 
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
 /*============================================================================*/
 /*=============================== SLIDER =====================================*/
 /*============================================================================*/
 
-.carousel,
-.carousel-item,
-.carousel-inner,
-.active {
-  height:100%;
+.carousel, .carousel-item, .carousel-inner, .active {
+  height: 100%;
 }
 
 .carousel-caption {
   top: 55%;
 }
 
-.carousel-caption > h1{
+.carousel-caption > h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 6rem;
   color: #ea2124;
   text-shadow: 1px 1px 10px #000;
 }
 
-.carousel-caption > p{
-  padding-top: 2em;
-  font-size: 2rem;
+.carousel-caption > p {
+  padding-top: 2rem;
   text-shadow: 1px 1px 10px #000;
 }
+
 
 /*============================================================================*/
 /*============================== ATTRACTIVES =================================*/
@@ -176,13 +248,11 @@ span {
 
 .attractive-item > h5 {
   padding-top: 1.5em;
-  font-size: 1.5em;
   text-align: center;
 }
 
 .attractive-item > p {
   padding-top: 1.5em;
-  font-size: 0.9em;
   text-align: justify;
 }
 
@@ -194,6 +264,7 @@ span {
 #trainingVideo {
   padding-top: 1em;
 }
+
 
 /*============================================================================*/
 /*================================ INSTAGRAM =================================*/
@@ -213,6 +284,7 @@ span {
   font-weight: 700;
 }
 
+
 /*============================================================================*/
 /*================================== FOOTER ==================================*/
 /*============================================================================*/
@@ -220,8 +292,11 @@ span {
 footer {
   background-color: #424142;
   color: white;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
+}
+
+.footer-item {
+  padding-top: 2rem;
 }
 
 #mapLink {

@@ -21,30 +21,30 @@
 <body>
 
   <header>
-    <nav id="navigation" class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded">
+    <nav id="navigation" class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-faded">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-             <i class="icon-menu"></i>
-           </button>
+        <button id="hamburgerMenu" class="navbar-toggler navbar-toggler-right align-middle" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">HOME</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">QUEM SOMOS</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">SERVIÇOS</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="#">SISTEMA</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="https://pt-br.facebook.com/Propulsebh-1037517512977392/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
               <a class="nav-link" href="https://www.instagram.com/propulsebh/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
           </ul>
@@ -64,8 +64,8 @@
       <div class="carousel-item active">
         <img id="banner1" class="d-block img-fluid slide-1" alt="First slide">
         <div class="carousel-caption">
-          <h1 class="text-md-left">FORÇA</h1>
-          <p class="text-md-left">
+          <h1 class="text-center text-md-left">FORÇA</h1>
+          <p class="text-center text-md-left">
             <span>É o pilar fundamental dentro do nosso sistema de treinamento.</span>
             <span>A combinação entre força e execução correta dos movimentos dita nosso trabalho.</span>
           </p>
@@ -74,8 +74,8 @@
       <div class="carousel-item">
         <img id="banner2" class="d-block img-fluid" alt="Second slide">
         <div class="carousel-caption">
-          <h1 class="text-md-left">FOCO</h1>
-          <p class="text-md-left">
+          <h1 class="text-center text-md-left">FOCO</h1>
+          <p class="text-center text-md-left">
             <span>Nossa meta é ajudar nossos alunos a atingirem seus resultados através</span>
             <span>de um sistema de treinamento que respeita suas limitações e seus objetivos.</span>
           </p>
@@ -84,8 +84,8 @@
       <div class="carousel-item">
         <img id="banner3" class="d-block img-fluid" alt="Third slide">
         <div class="carousel-caption">
-          <h1 class="text-md-left animated fadeIn">RESULTADO</h1>
-          <p class="text-md-left">
+          <h1 class="text-center text-md-left">RESULTADO</h1>
+          <p class="text-center text-md-left">
             <span>Explore todo seu potencial e atinja sua melhor performance.</span>
           </p>
         </div>
@@ -111,7 +111,7 @@
       </div>
 
       <div class="row">
-        <div class="attractive-item col-md-4 col-xs-1">
+        <div class="attractive-item col-12 col-md-4">
           <div class="attractive-image-container">
             <img src="img/guidance.jpg" alt="Atendimento personalizado">
           </div>
@@ -120,7 +120,7 @@
           </p>
         </div>
 
-        <div class="attractive-item col-md-4 col-xs-1">
+        <div class="attractive-item col-12 col-md-4">
           <div class="attractive-image-container">
             <img src="img/clock.jpg" alt="Treinamento dinâmico">
           </div>
@@ -128,7 +128,7 @@
           <p>Exercícios com variações e intensidades diferentes que proporcionam dinamismo e impulsionam o rendimento.</p>
         </div>
 
-        <div class="attractive-item col-md-4 col-xs-1">
+        <div class="attractive-item col-12 col-md-4">
           <div class="attractive-image-container">
             <img src="img/health.jpg" alt="Foco na saúde e qualidade de vida">
           </div>
@@ -153,7 +153,7 @@
         <div class="col-6 text-left d-flex align-items-center">
           <h2 id="instaTitle">#PROPULSEBH</h2>
         </div>
-        <div class="col-6 text-right">
+        <div class="col-6 text-right hidden-sm-down">
           <p>
             <span>Siga o nosso perfil <a id="instaLink" href="https://www.instagram.com/propulsebh/" target="_blank">@propulsebh</a> e fique por</span>
             <span>dentro das novidades e do que rola na Propulse</span>
@@ -167,14 +167,15 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-12 col-md-4 footer-item">
           <img src="img/logo-white.png" alt="White Logo">
         </div>
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-12 col-md-4 footer-item">
           <p>
             <span>Rua Benvinda de Carvalho nº 180, Loja 04</span>
             <span>São Pedro, Belo Horizonte - MG</span>
             <span>(31) 3879-0100</span>
+            <span>propulsebh@gmail.com</span>
             <br>
             <span>
               <a id="mapLink" href="https://www.google.com.br/maps/place/Propulsebh+centro+de+treinamento+fisico/@-19.9423452,-43.9412941,17z/data=!3m1!4b1!4m5!3m4!1s0xa699d6b4450a15:0x26ee29e98e2626d5!8m2!3d-19.9423452!4d-43.9391054" target="_blank">
@@ -183,11 +184,11 @@
            </span>
           </p>
         </div>
-        <div class="col-md-4 d-flex align-items-top">
+        <div class="col-12 col-md-4 footer-item">
           <p>
             <span>Horários: Segunda a Sexta, de 6:00h às 21:00h</span>
-            <br>
-            <br>
+            <br class="hidden-sm-down">
+            <br class="hidden-sm-down">
             <br>
             <span>Desenvolvido por: Eduardo Silva</span>
           </p>
@@ -200,13 +201,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="js/custom.js" charset="utf-8"></script>
-
-  <script type="text/javascript">
-    $('.carousel').carousel({
-      interval: 5000
-    })
-  </script>
-
 </body>
 
 </html>
